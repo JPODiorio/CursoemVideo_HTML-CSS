@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Teste essa imagem em diferentes tamanhos de tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="./images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./images/foto-m.png" type="image/png">
+        <img src="./images/foto-g.png" alt="foto-g">
+    </picture>
+    <h2>Áudio</h2>
+    <audio src="./audio/Pienso-Viento.mp3" controls autoplay></audio>
+    <!-- Outro Jeito -->
+    <audio controls>
+        <source src="./audio/Pienso-Viento.mp3" type="audio/mpeg">
+        <p>Caso não esteja conseguindo visualizar, baixe o áudio <a href="./audio/Pienso-Viento.mp3">aqui</a></p>
+        <!--É possível fazer o mesmo que foi feito com as imagens, porém com diferentes tipos de arquivos de áudio.-->
+    </audio>
+    <h2>Vídeos Locais</h2>
+    <video src="./video/video_menor.mp4" controls poster="./images/foto-p.png"></video>
+    <!-- Outro Jeito -->
+    <video controls poster="./images/foto-p.png">  <!--Parâmetro muted faz com que o autoplay funcione-->
+        <source src="./video/video_menor.mp4" type="video/mp4">
+        <!--É possível fazer o mesmo que foi feito com as imagens, porém com diferentes tipos de arquivos de vídeo.-->
+        <p>Caso não esteja conseguindo visualizar, baixe o vídeo <a href="./video/video_menor.mp4">aqui</a></p>
+    </video>
+    <h2>Vídeos Externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BXzLccDD7jY?si=gI0xbzhZ7Eh4kzrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --cor0: blue;
+    --cor1: wheat;
+    --cor2: green;
+    --cor3: yellow;
+
+    --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte_pixelada: 'Jersey 15', 'Jersey 10', 'Shadows Into Light', cursive;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte_padrao);
+}
+
+h1{
+    background-color: var(--cor3);
+    font-family: var(--fonte_pixelada);
+}
+
+h2{
+    background-color: var(--cor0);
+    font-family: var(--fonte_pixelada);
+}
+
+p{
+    background-color: var(--cor2);
+}

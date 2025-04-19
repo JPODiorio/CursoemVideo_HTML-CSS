@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 300px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        div.video{
+            background-color: rgba(173, 216, 230, 0.438);
+            padding: 20px;
+            padding-bottom: 54%;
+
+            position: relative;
+        }
+
+        div.video > iframe{
+            position: absolute;
+
+            top: 5%;
+            left: 5%;
+
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Responsividade</h1>
+        <h2>Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusantium, quo officiis magni nostrum mollitia laudantium deserunt aut cumque impedit aspernatur magnam accusamus quis consequuntur distinctio pariatur excepturi vero nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ipsum ducimus, consequuntur fugit aliquid aperiam at eum accusantium animi eaque repellat voluptatum quod veniam officiis fuga soluta amet? Id, corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eligendi cumque expedita provident aliquam? Voluptas vero dicta beatae! Alias laboriosam temporibus voluptate ut excepturi velit deleniti repellendus laborum minus facere!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="./images/foto-p.png">
+            <img src="./images/foto-g.png" alt="imagem G">
+        </picture>
+        <p>Veja o video abaixo: </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eG9JrLWy9Xw?si=hb_llQY9W8cmqTBF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusantium, quo officiis magni nostrum mollitia laudantium deserunt aut cumque impedit aspernatur magnam accusamus quis consequuntur distinctio pariatur excepturi vero nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ipsum ducimus, consequuntur fugit aliquid aperiam at eum accusantium animi eaque repellat voluptatum quod veniam officiis fuga soluta amet? Id, corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eligendi cumque expedita provident aliquam? Voluptas vero dicta beatae! Alias laboriosam temporibus voluptate ut excepturi velit deleniti repellendus laborum minus facere!</p>
+    </main>
+</body>
+</html>
