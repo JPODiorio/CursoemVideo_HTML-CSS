@@ -2,7 +2,7 @@ Curso de HTML5 e CSS3 do Curso em Vídeo
 
 Link dos desafios:
 
-<a href="https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio4/" target="_blank">Site Android</a>
+Site Android: https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio4/
 
-<a href="https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio5/" target="_blank">Cordel Moderno</a>
+Cordel Moderno: https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio5/
 
