@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de IFrames</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti deserunt ab minus iste eos commodi nobis optio culpa fuga, sint maxime quaerat incidunt. Non sequi optio ab reprehenderit ut cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis adipisci porro, qui, iste nihil ea ducimus pariatur similique optio cum quia culpa animi in nisi perspiciatis. Delectus, dicta molestiae.</p>
+    <iframe src="./extra/pagina005.html" frameborder="1" sandbox="sandbox allow-scripts" referrerpolicy="no-referrer">nao abriu</iframe>  
+    <!--referrerpolicy="no-referrer" impede a captura de dados-->
+
+    <!--sandbox="sandbox" impede todo o envio de dados para outros sites
+    sandbox="allow-same-origin-forms" permite envio de dados da mesma origem (tipo o página004)
+    sandbox="allow-forms" permite formulários
+    sandbox="allow-scrips" permite a execução de scripts pelo html5
+    Todos os parâmetros acima podem ser usados num mesmo sandbox=""-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus assumenda iure saepe maiores non ipsum enim sunt doloribus beatae mollitia voluptatum blanditiis laudantium, officia consectetur, excepturi labore velit deleniti sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatum ullam libero aut quo qui corrupti cumque laborum adipisci minima! Similique maxime fugiat dolorum. Placeat repellendus aliquid expedita nostrum quae?</p>
+</body>
+</html>
