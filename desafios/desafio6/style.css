@@ -32,19 +32,30 @@ section#celular{
     height: 627px;
 }
 
+iframe{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
+}
+
 nav{
-    position: absolute;
-    left: 96%;
+    text-align: right;
 }
 
 nav img{
     height: 50px;
     border-radius: 50%;
     margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
 }
 
 nav img:hover{
-    border: 1px solid white;
-    transition: .4s;
+    border: 1px solid rgb(255, 255, 255);
+    transform: translate(-3px, -3px);
+    transition: transform .4s, border .5s; /*o nome de outra propriedade faz o transition aplicar apenas para aquela propriedade*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
 }
 
