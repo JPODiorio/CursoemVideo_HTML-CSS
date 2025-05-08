@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body { /*Tirar a barra de rolagem*/
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+img{
+    width: 100vw;
+}
+
+a{
+    display: block;
+    background-color: darkred;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
