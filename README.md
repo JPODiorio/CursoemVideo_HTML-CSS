@@ -6,3 +6,4 @@ Site Android: https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio
 
 Cordel Moderno: https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio5/
 
+Projeto Redes Sociais: https://jpodiorio.github.io/CursoemVideo_HTML-CSS/desafios/desafio6/
