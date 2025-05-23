@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 3</title>
+</head>
+<body>
+    <h1>Formulários 3</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Media: </label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0-10" value="3" step=".1" required>
+            <input type="button" value="Nota" onclick="nota()">
+        </p>
+        <p>
+            <label for="idata">Período Letivo: </label>
+            <input type="date" name="data" id="idata"> <!--No firefox não funciona o "month" :(-->
+            <input type="button" value="Data" onclick="alterarData()">
+        </p>
+        <p>
+            <label for="ihora">Horário: </label>
+            <input type="time" name="hora" id="ihora">
+            <input type="button" value="Hora" onclick="alterarHora()">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script> //Teste de alterar o value com JS
+        function nota(){
+            var nota = document.querySelector("input#imedia");
+            nota.value="5";
+        }
+        function alterarData(){
+            var dataAtual = new Date();
+            var data = document.querySelector("input#idata");
+            var ano = dataAtual.getFullYear();
+            var mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0');
+            var dia = dataAtual.getDate().toString().padStart(2, '0');
+
+            var dataFormatada = `${ano}-${mes}-${dia}`;
+            data.value = dataFormatada;
+        }
+        function alterarHora(){
+            var horaAtual = new Date();
+            var horario = document.querySelector("input#ihora");
+
+            var hora = horaAtual.getHours();
+            var minuto = horaAtual.getMinutes();
+
+            var horaFormatada = `${hora}:${minuto}`;
+            horario.value = horaFormatada;
+        }
+    </script>
+</body>
+</html>
