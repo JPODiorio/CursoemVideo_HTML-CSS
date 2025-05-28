@@ -21,12 +21,12 @@ h1{
 
 @media screen and (orientation: portrait){
     body{
-        background: url("../images/cev-portrait.jpg") center bottom no-repeat fixed;  
+        background: url("../../images/cev-portrait.jpg") center bottom no-repeat fixed;  
     }
 }
 
 @media screen and (orientation: landscape){
     body{
-        background: url("../images/cev-landscape.jpg") left bottom no-repeat fixed;
+        background: url("../../images/cev-landscape.jpg") left bottom no-repeat fixed;
     }
 }

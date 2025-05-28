@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+@media print{
+    body{
+        background: black url("../../images/back-print.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    img#print{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
