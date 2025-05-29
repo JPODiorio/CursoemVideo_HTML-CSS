@@ -2,12 +2,60 @@
 
 /*Todas as demais mídias*/
 
+/*Typical Device Breakpoints 2025
+Pequenas telas:	até 320px
+Celular: 600px – 768px
+Tablet:	769px – 992px
+Desktop: 993px – 1200px
+Grandes telas (TV):	1201px e acima
+*/
+
 @media print{
-    body{
-        background: black url("../../images/back-print.jpg") center center no-repeat;
-        background-size: cover;
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
     }
     img#print{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px)  { /*Tablet*/
+    body{
+        background-image: url("../../images/back-tablet.jpg");
+    }
+    img#tablet{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1536px)  { /*Desktop*/
+    body{
+        background-image: url("../../images/back-pc.jpg");
+    }
+    img#pc{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1536px)  { /*Telas grandes*/
+    body{
+        background-image: url("../../images/back-tv.jpg");
+    }
+    img#tv{
         display: block;
     }
     img#phone{
