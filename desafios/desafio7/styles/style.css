@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*Cores: 
+Amarelo: #DAB973
+Azul: #51A9E4*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #51a9e4;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    transition: width 4s height 4s;
+}
+
+section#login{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden; /*Tudo fora da borda some, substitui, por exemplo, a necessidade de border-radius na imagem*/
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+}
+
+div#imagem{
+    background: white url("./images/pexels-ann-h-45017-1762851.jpg") center center no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: block;
+}
+
+div#formulario{
+    display: block;
+    padding: 10px 0px;
+}
+
+div#formulario{
+    text-align: justify;
+}
+
+div#formulario h1{
+    text-align: center;
+}
+
+div#formulario p.inserir{
+    color: white;
+    background-color: #51a9e4;
+    padding: 5px 10px;
+}
+
+div#formulario span{
+    padding: 5px 10px;
+}
+
+div#formulario p.inserir > input{
+    height: 40px;
+    width: 150px;
+}
