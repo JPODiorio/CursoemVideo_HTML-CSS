@@ -18,18 +18,20 @@
                 <form action="cadastro.php" method="post" autocomplete="on">
                     <p class="inserir">
                         <label for="imail"><span class="material-symbols-outlined">person</span></label>
-                        <input type="email" name="mail" id="imail" required placeholder="Seu e-mail" autocomplete="email">
+                        <input type="email" name="mail" id="imail" required placeholder="Seu e-mail" autocomplete="email" maxlength="30">
                     </p>
                     <p class="inserir">
                         <label for="isenha"><span class="material-symbols-outlined">key</span></label>
-                        <input type="password" name="senha" id="isenha" required placeholder="Sua senha">
+                        <input type="password" name="senha" id="isenha" required placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="20">
                     </p>
-                    <p>
-                        <input type="submit" value="Entrar">
-                    </p>
-                    <p>
-                        <input type="button" value="Esqueci a senha">
-                    </p>
+                    <div id="botoes">
+                        <p>
+                            <input type="submit" value="Entrar" id="entrar">
+                        </p>
+                        <p id="reset">
+                            <a href="#">Esqueci a Senha<span class="material-symbols-outlined">mail</span></a>
+                        </p>
+                    </div>
                 </form>
             </div>
         </section>
